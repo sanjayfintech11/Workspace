@@ -73,7 +73,7 @@ stages:
 - stage: pre_prod
   displayName: 'Pre-Production Stage'
   jobs:
-  - deployment: pre_prod_Deployment
+  - deployment: pre_prod
     displayName: 'pre_prod Deployment'
     environment: 'pre_prod'
     strategy:
@@ -85,7 +85,7 @@ stages:
 - stage: Production
   displayName: 'Production'
   jobs:
-  - deployment: Prod_Deployment
+  - deployment: Production
     displayName: 'Production Deployment'
     environment: 'Production'
     strategy:
