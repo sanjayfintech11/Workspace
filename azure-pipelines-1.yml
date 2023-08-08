@@ -7,7 +7,7 @@ pool:
   vmImage: 'windows-latest'
 stages:
 - stage: Build
-  displayName: 'Build Stage'
+  displayName: 'Build'
   jobs:
   - deployment: Build
     displayName: 'Build Deployment'
@@ -83,7 +83,7 @@ stages:
           - script: echo "Deploying to pre_prod..."
             displayName: 'Deploy to pre_prod'
 - stage: Production
-  displayName: 'Production Stage'
+  displayName: 'Production'
   jobs:
   - deployment: Prod_Deployment
     displayName: 'Production Deployment'
