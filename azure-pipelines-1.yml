@@ -53,7 +53,7 @@ stages:
           steps:
           - script: echo "Deploying to Test..."
             displayName: 'Deploy to Test'
-  - job: Test_Dev_1
+  - job: Test
     displayName: 'Regression Tests'
     steps:
     - script: echo "Running regression tests..."
